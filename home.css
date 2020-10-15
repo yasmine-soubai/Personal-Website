@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&amp;family=Varta:wght@300;400;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+@import url("https://fonts.googleapis.com/css?family=Rochester");
+
 html {
     scroll-behavior: smooth;
 }  
@@ -7,7 +10,7 @@ body {
     font-weight:600;
     text-align:center !important;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Anonymous Pro';
 }
 h1,
 h2,
@@ -20,26 +23,31 @@ h6 {
 }
 
 a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     color: white;
 }
 
 a:hover {
     color: #b91258;
+    text-decoration: none;
+    font-size: larger;
 }
 
+.cursive {
+    font-family: 'Rochester';
+    color: #b91258;
+    font-size: 72px;
+    text-shadow: 4px 4px 4px #aaa;
+}
 /* Navbar */
 .navbar-header {
     position: fixed !important;
     background-color: #111 !important;
     width: 100%;
     text-transform: uppercase;
-    border-bottom: 2px solid #a58220;
 }
 .hoverable{
     background: #111 !important;
-    display:inline-block;
-    vertical-align: middle;
     position:relative;
     box-shadow: 0 0 1px rgba(19, 19, 19, 0);
     transition-duration: .3s;
@@ -62,6 +70,7 @@ a:hover {
 }
 .hoverable:hover, .hoverable:active, .hoverable:focus{
     transform: translateY(-5px);
+    color: #b91258;
 }
 .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
     opacity: 1;
@@ -110,8 +119,8 @@ a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    min-height: 100vh;
-    padding: 100px 50px;
+    min-height: 90vh;
+    padding: 20px 50px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -124,6 +133,64 @@ a:hover {
     color: white;
     text-align: center;
 }
+/*progress ring*/
+#container { margin: 0%; }
+
+#circle { position: relative; width: 100%; ; overflow: hidden; }
+
+#circle text { font-size: 16px; font-weight: bold; }
+
+#circle svg { position: absolute; left: 0; top: 0; width: 650px; height: 650px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+/**/
+.round-img {
+    border-radius: 50%;
+    height: 400px;
+  }
 
 /*Footer contact-info*/
 @media screen and (max-width: 991px) {
@@ -138,7 +205,7 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    padding: 100px 50px;
+    padding: 20px 50px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;

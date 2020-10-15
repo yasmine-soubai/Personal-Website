@@ -17,7 +17,7 @@
 <body>
 <header>
   <div class="container-fluid">
-    <nav class="navbar navbar-header justify-content-between fixed-top">
+    <nav class="navbar navbar-header fixed-top">
         <ul class="nav navbar-nav navbar-header">
           <li><a id="len1" class="hoverable" href="#">Home</a></li>
           <li><a id="len2" class="hoverable" href="./about.html">About</a></li>
@@ -29,36 +29,37 @@
 </header>
 
 <div class="main-section">
-  <div class="w-container">
-    <div class="">
-      <img class="my-img"src="./imgs/myImg.png"> <!--Add image-->
-    </div>
-    <div class="section__title--contact">Interested to know more?</div>
-    <div data-w-id="" class="email-link-wrapper">
-      <p>Email me 
-        <a href="#" id="email-link" class="email-link-2 text">yasminesoubai99@gmail.com</a>
-      </p>
-      <div style="transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); display: none; opacity: 0; transform-style: preserve-3d;" class="email-link__tooltip">
-        <a data-clipboard-text="yasminesoubai99@gmail.com" data-w-id="8c93aa77-a664-bf95-d2a9-54f270251a57" href="#" class="clipboard w-button">Copy email to clipboard</a>
-        <div class="email-link__divider"></div>
-        <div>
-          <a href="mailto:yasminesoubai99@gmail.com" class="email-link-2">Email me directly</a>
-        </div>
+  <div>
+    <div id="container">
+      <div id="circle" width=200%>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+              <path id="circlePath" d="M 150, 150 m -70, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+          </defs>
+          <circle cx="150" cy="100" r="500" fill="none"/>
+          <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="white">
+                  <textPath xlink:href="#circlePath">Nice to meet you!</textPath>
+              </text>
+              <img src="imgs/myImg.jpg" class="round-img">
+          </g>
+      </svg>
       </div>
     </div>
-    <div class="social-wrapper">
-      <div class="social-wrapper-title">Find me on</div>
-        <a href="https://www.instagram.com/sb.yasmine/?hl=en" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Instagram">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/yasmine-soubai" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Linkedin">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
+    
+  </div>
+  <div class="w-container">
+    <div class="h3">Hey, I'm 
+      <span><h1 class="cursive">Yasmine Soubai.</h1></span><br>
+      I'm a front-end developer and designer <br> working on building meaningful experiences
     </div>
   </div>
+  <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a58220;">  E M <br> <br> W O L L O F</marquee>
 </div>
 
 <div class="contact-section">
+  <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a58220;">  E M <br> <br> W O L L O F</marquee>
   <div class="w-container">
     <div class="section__title--contact">Interested to know more?</div>
     <div data-w-id="" class="email-link-wrapper">
@@ -74,20 +75,26 @@
       </div>
     </div>
     <div class="social-wrapper">
-      <div class="social-wrapper-title">Find me on</div>
+      <h1 class="social-wrapper-title">#FollowMe</h1>
         <a href="https://www.instagram.com/sb.yasmine/?hl=en" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Instagram">
-          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-instagram fa-2x" style="font-size: 50px;"></i>
         </a>
         <a href="https://www.linkedin.com/in/yasmine-soubai" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Linkedin">
-          <i class="fab fa-linkedin fa-2x"></i>
+          <i class="fab fa-linkedin fa-2x" style="font-size: 50px;"></i>
+        </a>
+        <a href="https://github.com/yasminesoubai99" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Github">
+          <i class="fab fa-github fa-2x" style="font-size: 50px;"></i>
         </a>
     </div>
   </div>
   <div class="footer-bg">
-    <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="500" height="500">
+    <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="500" height="450">
+    <h4>Made with 
+      <span><i class="fal fa-heart" style="color: #b91258;"></i></span>
+      by Yasmine Soubai</h4>
+    <h4>Last Update 2020</h4>
   </div>
   <div class="footer-text">
-    <h4>Made with love by Yasmine Soubai</h4>
   </div>
 </div>
 
