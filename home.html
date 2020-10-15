@@ -16,22 +16,33 @@
 
 <body>
 <header>
-  <div class="container-fluid">
-    <nav class="navbar navbar-header fixed-top">
-        <ul class="nav navbar-nav navbar-header">
-          <li><a id="len1" class="hoverable" href="#">Home</a></li>
-          <li><a id="len2" class="hoverable" href="./about.html">About</a></li>
-          <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
-          <li><a id="len4" class="hoverable" href="#">Contact</a></li>
-        </ul>
-    </nav>
-  </div>
+  <nav class="navbar navbar-header fixed-top">
+    <a class="navbar-brand cursive" style="font-size: 30px;" href="#">YS</a>
+    <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="active"><a id="len1" class="hoverable nav-link" href="#">Home</a></li>
+        <li><a id="len2" class="hoverable nav-link" href="./about.html">About</a></li>
+        <li><a id="len3" class="hoverable nav-link" href="#">Portfolio</a></li>
+        <li><a id="len4" class="hoverable nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
-<div class="main-section">
-  <div>
-    <div id="container">
-      <div id="circle" width=200%>
+<div class="main-section row">
+  <div id="container">
+    <div id="circle" width=200%>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
           <defs>
               <path id="circlePath" d="M 150, 150 m -70, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
@@ -45,9 +56,7 @@
               <img src="imgs/myImg.jpg" class="round-img">
           </g>
       </svg>
-      </div>
     </div>
-    
   </div>
   <div class="w-container">
     <div class="h3">Hey, I'm 
@@ -55,10 +64,31 @@
       I'm a front-end developer and designer <br> working on building meaningful experiences
     </div>
   </div>
-  <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a58220;">  E M <br> <br> W O L L O F</marquee>
+  <marquee direction="down" height="800" width="10" scrollamount="15" style="color: #a58220;">  
+    E M <br> <br> W O L L O F
+    <i class="fad fa-arrow-alt-up"></i>
+  </marquee>
 </div>
 
-<div class="contact-section">
+<div class="main-section row">
+  <div class="row">
+    <div class="col-sm col-left">
+      <div class="content-main">
+        <span class="dot">
+          <div class="square"></div>
+          <div class="triangle-left"></div>
+        </span>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="content-main">
+        <h1>Hi</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section row">
   <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a58220;">  E M <br> <br> W O L L O F</marquee>
   <div class="w-container">
     <div class="section__title--contact">Interested to know more?</div>
@@ -88,7 +118,7 @@
     </div>
   </div>
   <div class="footer-bg">
-    <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="500" height="450">
+    <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="450" height="450">
     <h4>Made with 
       <span><i class="fal fa-heart" style="color: #b91258;"></i></span>
       by Yasmine Soubai</h4>

@@ -25,9 +25,10 @@ h6 {
 a{
     font-family: 'Space Mono', sans-serif;
     color: white;
+    text-decoration: none;
 }
 
-a:hover {
+a:hover{
     color: #b91258;
     text-decoration: none;
     font-size: larger;
@@ -39,19 +40,32 @@ a:hover {
     font-size: 72px;
     text-shadow: 4px 4px 4px #aaa;
 }
+
+.cursive:hover,
+.cursive:visited{
+    color: #b91258;
+}
 /* Navbar */
 .navbar-header {
     position: fixed !important;
     background-color: #111 !important;
     width: 100%;
     text-transform: uppercase;
+    padding-left: 25%;
+}
+.navbar-collapse {
+    flex-grow: unset;
+}
+.navbar-toggler {
+    background-color: black;
 }
 .hoverable{
-    background: #111 !important;
+    background:none !important;
     position:relative;
     box-shadow: 0 0 1px rgba(19, 19, 19, 0);
     transition-duration: .3s;
     transition-property:transform;
+    margin-left: 30px;
 }
 .hoverable:before{
     position: fixed !important;
@@ -186,11 +200,61 @@ a:hover {
     to { transform: rotate(0); }
 }
 
-/**/
+/*Round Image*/
 .round-img {
     border-radius: 50%;
     height: 400px;
   }
+
+/*Second main section*/
+.dot {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(135deg, #a58220 0%,#b91258 100%);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.square{
+        width: 100px;
+        height: 100px;
+        background-color: none;
+        border:solid white;
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 60px solid transparent;
+	border-right: 120px solid white;
+    border-bottom: 60px solid transparent;
+    margin-top: 0;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+  @keyframes example {
+    0%   {border-color:white; left:0px; top:0px;}
+    25%  {border-color:#a58220; left:100px; top:0px;}
+    50%  {border-color:#b91258; left:100px; top:100px;}
+    75%  {border-color:white; left:0px; top:100px;}
+    100% {border-color:#a58220; left:0px; top:0px;}
+  }
+.content-main {
+    padding: 10px;
+    margin: 50px;
+    width: 100%;
+}
+.col-left {
+    align-items: left;
+}
 
 /*Footer contact-info*/
 @media screen and (max-width: 991px) {
