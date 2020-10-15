@@ -1,76 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&amp;family=Varta:wght@300;400;600;700&amp;display=swap");
 html {
     scroll-behavior: smooth;
-  }  
+}  
 body {
     background-color: rgba(0,0,0,1);
     font-weight:600;
     text-align:center !important;
     color: white;
     font-family: "Roboto", sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poiret One", cursive;
     font-weight: bolder;
-  }
+}
 
-  a{
-      font-family: 'Roboto', sans-serif;
-      color: rgb(94, 94, 94);
-  }
+a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
 
-  a:hover {
-      color: #b91258;
-  }
+a:hover {
+    color: #b91258;
+}
 
 /* Navbar */
-  .navbar-header ul {
-    position: sticky;
-    top: 0;
-  }
-  .navbar-header {
-    background: none !important;
-    text-transform:uppercase;
-  }
-  .hoverable{
+.navbar-header {
+    position: fixed !important;
+    background-color: #111 !important;
+    width: 100%;
+    text-transform: uppercase;
+    border-bottom: 2px solid #a58220;
+}
+.hoverable{
+    background: #111 !important;
     display:inline-block;
-    backface-visibility: hidden;
     vertical-align: middle;
     position:relative;
     box-shadow: 0 0 1px rgba(19, 19, 19, 0);
     transition-duration: .3s;
     transition-property:transform;
-  }
-  .hoverable:before{
-    position:absolute;
+}
+.hoverable:before{
+    position: fixed !important;
     pointer-events: none;
-    z-index:-1;
     content: '';
     top: 100%;
     left: 5%;
     height:10px;
-    width:90%;
+    width:100%;
     opacity:0;
     background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
     /* W3C */
     transition-duration: 0.3s;
     transition-property: transform, opacity;
-  }
-  .hoverable:hover, .hoverable:active, .hoverable:focus{
+}
+.hoverable:hover, .hoverable:active, .hoverable:focus{
     transform: translateY(-5px);
-  }
-  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
     opacity: 1;
     transform: translateY(-5px);
-  }
-  @keyframes bounce-animation {
+}
+@keyframes bounce-animation {
     16.65% {
       -webkit-transform: translateY(8px);
       transform: translateY(8px);
@@ -95,22 +92,20 @@ body {
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
-  }
-  .bounce {
+}
+.bounce {
     animation-name: bounce-animation;
     animation-duration: 2s;
-  }
+}
 
-  /**/
-  @media screen and (max-width: 991px) {
+  /*Footer contact-info*/
+@media screen and (max-width: 991px) {
     .contact-section {
         min-height: auto;
         padding-top: 40px;
     }
-  }
+}
 .contact-section {
-    position: relative;
-    z-index: 10;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -128,6 +123,14 @@ body {
     background-color: #fff;
     color: #111;
     text-align: center;
+}
+
+.contact-section a {
+    color: #a58220;
+}
+
+.contact-section a:hover {
+    color: #b91258;
 }
 
 @media screen and (max-width: 991px) {
@@ -174,3 +177,34 @@ body {
     -webkit-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
 }
+
+ /* .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://pngimage.net/wp-content/uploads/2018/06/footer-background-png-1.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.footer_bg .footer_bg_one {
+    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+ .footer_bg .footer_bg_two {
+    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+} */
