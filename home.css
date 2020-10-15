@@ -98,7 +98,34 @@ a:hover {
     animation-duration: 2s;
 }
 
-  /*Footer contact-info*/
+/*Main section*/
+@media screen and (max-width: 991px) {
+    .main-section {
+        min-height: auto;
+        padding-top: 40px;
+    }
+}
+.main-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    padding: 100px 50px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*Footer contact-info*/
 @media screen and (max-width: 991px) {
     .contact-section {
         min-height: auto;
@@ -178,33 +205,9 @@ a:hover {
     transition: background-color .2s ease-in-out;
 }
 
- /* .footer_bg {
+ .footer_bg {
     position: absolute;
     bottom: 0;
-    background: url("https://pngimage.net/wp-content/uploads/2018/06/footer-background-png-1.png") no-repeat scroll center 0;
     width: 100%;
     height: 266px;
 }
-
-.footer_bg .footer_bg_one {
-    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
-    width: 330px;
-    height: 105px;
-  background-size:100%;
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    -webkit-animation: myfirst 22s linear infinite;
-    animation: myfirst 22s linear infinite;
-}
- .footer_bg .footer_bg_two {
-    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
-    width: 88px;
-    height: 100px;
-  background-size:100%;
-    bottom: 0;
-    left: 38%;
-    position: absolute;
-    -webkit-animation: myfirst 30s linear infinite;
-    animation: myfirst 30s linear infinite;
-} */
