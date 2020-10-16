@@ -277,6 +277,9 @@ a:hover{
 .card-title {
     color:#a58220;
 }
+.cart-text {
+    text-align: justify;
+}
 /*Footer contact-info*/
 @media screen and (max-width: 991px) {
     .contact-section {
