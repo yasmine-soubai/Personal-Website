@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 1335px;
 }  
 body {
     background-color: rgba(0,0,0,1);
@@ -29,21 +30,21 @@ a{
 }
 
 a:hover{
-    color: #b91258;
+    color: #a70303;
     text-decoration: none;
     font-size: larger;
 }
 
 .cursive {
     font-family: 'Rochester';
-    color: #b91258;
+    color: #a70303;
     font-size: 72px;
     text-shadow: 4px 4px 4px #aaa;
 }
 
 .cursive:hover,
 .cursive:visited{
-    color: #b91258;
+    color: #a70303;
 }
 /* Navbar */
 .navbar-header {
@@ -84,7 +85,7 @@ a:hover{
 }
 .hoverable:hover, .hoverable:active, .hoverable:focus{
     transform: translateY(-5px);
-    color: #b91258;
+    color: #a70303;
 }
 .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
     opacity: 1;
@@ -230,12 +231,11 @@ a:hover{
     color: white;
     text-align: center;
     padding: 0;
-    margin: 0;
 }
 .dot {
     height: 200px;
     width: 200px;
-    background: linear-gradient(135deg, #a58220 0%,#b91258 100%);
+    background: linear-gradient(135deg, #9c6d6d 0%,#a70303 100%);
     border-radius: 50%;
     display: inline-block;
   }
@@ -270,7 +270,7 @@ a:hover{
 @keyframes example {
 0%   {border-color:white; left:0px; top:0px;}
 25%  {border-color:#a58220; left:100px; top:0px;}
-50%  {border-color:#b91258; left:100px; top:100px;}
+50%  {border-color:#a70303; left:100px; top:100px;}
 75%  {border-color:white; left:0px; top:100px;}
 100% {border-color:#a58220; left:0px; top:0px;}
 }
@@ -279,6 +279,111 @@ a:hover{
 }
 .cart-text {
     text-align: justify;
+}
+
+
+/*Interactive cards*/
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.container .card .face{
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+    background: none;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #a70303;
+    transform: translateY(0);
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    text-align: left;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    align-content: center;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
 }
 /*Footer contact-info*/
 @media screen and (max-width: 991px) {
@@ -312,7 +417,7 @@ a:hover{
 }
 
 .contact-section a:hover {
-    color: #b91258;
+    color: #a70303;
 }
 
 @media screen and (max-width: 991px) {
