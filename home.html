@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yasmine | Portfolio</title>
+  <link rel="icon" href="imgs/tablogo.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- My CSS-->
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-header fixed-top">
+    <a class="navbar-brand cursive" style="font-size: 30px;" href="#">YS</a>
+    <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="active"><a id="len1" class="hoverable nav-link" href="#">Home</a></li>
+        <li><a id="len2" class="hoverable nav-link" href="./about.html">About</a></li>
+        <li><a id="len3" class="hoverable nav-link" href="#">Portfolio</a></li>
+        <li><a id="len4" class="hoverable nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="main-section row">
+  <div id="container">
+    <div id="circle" width=200%>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+              <path id="circlePath" d="M 150, 150 m -70, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+          </defs>
+          <circle cx="150" cy="100" r="500" fill="none"/>
+          <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="white">
+                  <textPath xlink:href="#circlePath">Nice to meet you!</textPath>
+              </text>
+              <img src="imgs/myImg.jpg" class="round-img">
+          </g>
+      </svg>
+    </div>
+  </div>
+  <div class="w-container">
+    <div class="h3">Hey, I'm 
+      <span><h1 class="cursive">Yasmine Soubai.</h1></span><br>
+      I'm a front-end developer and designer <br> working on building meaningful experiences
+    </div>
+  </div>
+  <marquee direction="down" height="800" width="10" scrollamount="15" style="color: #a58220;">  
+    E M <br> <br> W O L L O F
+    <i class="fad fa-arrow-alt-up"></i>
+  </marquee>
+</div>
+
+<div class="main-section-2">
+    <div class="row">
+      <div class="col">
+            <span class="dot">
+              <div class="square"></div>
+              <div class="triangle-left"></div>
+            </span>
+      </div>
+    </div>
+    <div class="col-sm col-right">
+      <div class="card" style="margin-left: 100px;">
+        <div class="card-body">
+          <h2 class="card-title">My Background</h2>
+          <hr class="my-2" />
+          <p class="card-text" style="width: 700px;">
+            As a computer science student at GeorgiaTech, I had 
+            ample opportunities to develop my programming and design 
+            skills. This website will exhibit some projects I am proud
+            of, as well as ...</p>
+          <a href="./about.html" class="card-link"><u>About Me</u></a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="main-section-2">
+  <div class="col-sm col-right">
+    <div class="card" style="margin-right: 100px;">
+      <div class="card-body">
+        <h2 class="card-title">My Involvement</h2>
+        <hr class="my-2" />
+        <p class="card-text" style="width: 700px;">
+          I have recently participated in a Hackathon focusing on the healthcare 
+          track. My team and I won the 2nd prize for our idea generation and design.
+          I have been working with Regions bank for my junior design project since 
+          January 2020 to implement and redesign their auto-loan calculator. Lastly
+          I am interning part-time with a startup, leading their front-end teams to
+          build their website from scratch.
+        </p>
+        <a href="./portfolio.html" class="card-link"><u>Learn More</u></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+          <span class="dot">
+            <div class="square"></div>
+            <div class="triangle-left"></div>
+          </span>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section row">
+  <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a58220;">  E M <br> <br> W O L L O F</marquee>
+  <div class="w-container">
+    <div class="section__title--contact">Interested to know more?</div>
+    <div data-w-id="" class="email-link-wrapper">
+      <p>Email me 
+        <a href="#" id="email-link" class="email-link-2 text">yasminesoubai99@gmail.com</a>
+      </p>
+      <div style="transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); display: none; opacity: 0; transform-style: preserve-3d;" class="email-link__tooltip">
+        <a data-clipboard-text="yasminesoubai99@gmail.com" data-w-id="8c93aa77-a664-bf95-d2a9-54f270251a57" href="#" class="clipboard w-button">Copy email to clipboard</a>
+        <div class="email-link__divider"></div>
+        <div>
+          <a href="mailto:yasminesoubai99@gmail.com" class="email-link-2">Email me directly</a>
+        </div>
+      </div>
+    </div>
+    <div class="social-wrapper">
+      <h1 class="social-wrapper-title">#FollowMe</h1>
+        <a href="https://www.instagram.com/sb.yasmine/?hl=en" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Instagram">
+          <i class="fab fa-instagram fa-2x" style="font-size: 50px;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yasmine-soubai" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Linkedin">
+          <i class="fab fa-linkedin fa-2x" style="font-size: 50px;"></i>
+        </a>
+        <a href="https://github.com/yasminesoubai99" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Github">
+          <i class="fab fa-github fa-2x" style="font-size: 50px;"></i>
+        </a>
+    </div>
+  </div>
+  <div class="footer-bg">
+    <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="450" height="450">
+    <h4>Made with 
+      <span><i class="fal fa-heart" style="color: #b91258;"></i></span>
+      by Yasmine Soubai</h4>
+    <h4>Last Update 2020</h4>
+  </div>
+  <div class="footer-text">
+  </div>
+</div>
+
+<!-- Tool Tip -->
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+</body>
+</html>
