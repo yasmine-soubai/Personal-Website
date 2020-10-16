@@ -207,6 +207,31 @@ a:hover{
   }
 
 /*Second main section*/
+@media screen and (max-width: 991px) {
+    .main-section-2 {
+        min-height: auto;
+    }
+}
+.main-section-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 50vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 .dot {
     height: 200px;
     width: 200px;
@@ -220,15 +245,16 @@ a:hover{
     padding-bottom: 100%;
 }
 .square{
-        width: 100px;
-        height: 100px;
-        background-color: none;
-        border:solid white;
-        position: relative;
-        animation-name: example;
-        animation-duration: 3s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+    background-color: none;
+    border:solid white;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    display: inline-block;
 }
 .triangle-left {
 	width: 0;
@@ -239,23 +265,18 @@ a:hover{
     margin-top: 0;
     margin-bottom: 100px;
     margin-left: 100px;
+    opacity: 0.5;
 }
-  @keyframes example {
-    0%   {border-color:white; left:0px; top:0px;}
-    25%  {border-color:#a58220; left:100px; top:0px;}
-    50%  {border-color:#b91258; left:100px; top:100px;}
-    75%  {border-color:white; left:0px; top:100px;}
-    100% {border-color:#a58220; left:0px; top:0px;}
-  }
-.content-main {
-    padding: 10px;
-    margin: 50px;
-    width: 100%;
+@keyframes example {
+0%   {border-color:white; left:0px; top:0px;}
+25%  {border-color:#a58220; left:100px; top:0px;}
+50%  {border-color:#b91258; left:100px; top:100px;}
+75%  {border-color:white; left:0px; top:100px;}
+100% {border-color:#a58220; left:0px; top:0px;}
 }
-.col-left {
-    align-items: left;
+.card-title {
+    color:#a58220;
 }
-
 /*Footer contact-info*/
 @media screen and (max-width: 991px) {
     .contact-section {
