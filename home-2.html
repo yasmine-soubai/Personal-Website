@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Yasmine | Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- My CSS-->
   <link rel="stylesheet" href="home-2.css">
+  
+  <!--Animate website while scrolling-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<body>
+<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" cz-shortcut-listen="true">
 
 <!--Loader-->
 <div class="loader-wrapper">
@@ -28,7 +33,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">YS</a>
+      <a class="navbar-brand" href="#" data-aos="zoom-out" data-aos-delay="1000" data-aos-easing="ease">YS</a>
     </div>
     <div class="collapse navbar-collapse abs-center-x bg-red" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -44,10 +49,9 @@
 <div class="container-fluid main-section text-center">    
   <div class="row content">
     <div class="col-sm-9 text-left">
-            <span><h1 class="name">Yasmine <br> Soubai</h1></span><br>
-            <span><h3 class="sub-heading-1">Front-End Developer</h3></span><br>
-            <span><h1 class="sub-heading-2">UX-UI Designer</h1></span>
-          </div>
+      <span><h1 class="name" data-aos="zoom-in" data-aos-delay="300" data-aos-easing="ease">Yasmine <br> Soubai</h1></span><br>
+      <span><h3 class="sub-heading-1" data-aos="fade-up" data-aos-delay="400" data-aos-easing="linear">Front-End Developer</h3></span><br>
+      <span><h1 class="sub-heading-2" data-aos="fade-up" data-aos-delay="500" data-aos-easing="linear">UX-UI Designer</h1></span>
     </div>
     <!-- <div id="circle" >
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
@@ -63,6 +67,143 @@
             </g>
         </svg>
     </div> -->
+  </div>
+</div>
+<div class="container-fluid center-section">    
+  <div class="row content row-center-section">
+    <div class="col-sm-6 text-center">
+      <span class="dot">
+        <div class="square"></div>
+        <div class="triangle-left"></div>
+      </span>
+    </div>
+    <div class="col-sm-6 text-left"> 
+      <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-easing="linear">
+        <div class="card-body">
+          <h2 class="card-title">My Background</h2>
+          <hr class="my-2" />
+          <p class="card-text">
+            As a computer science student at GeorgiaTech, I had 
+            ample opportunities to develop my programming and design 
+            skills. This website will exhibit some projects I am proud
+            of, as well as ...</p>
+          <a href="./about.html" class="card-link"><u>About Me</u></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row content row-center-section">
+    <div class="col-sm-6 text-left">
+      <div class="card" data-aos="fade-right" data-aos-delay="400" data-aos-easing="linear">
+        <div class="card-body">
+          <h2 class="card-title">My Involvement</h2>
+          <hr class="my-2" />
+          <p class="card-text">
+            I have recently participated in a Hackathon focusing on the healthcare 
+            track. My team and I won the 2nd prize for our idea generation and design.
+            I have been working with Regions bank for my junior design project since 
+            January 2020 to implement and redesign their auto-loan calculator. Lastly
+            I am interning part-time with a startup, leading their front-end teams to
+            build their website from scratch.
+          </p>
+          <a href="./portfolio.html" class="card-link"><u>Learn More</u></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 text-center"> 
+      <div class="col">
+        <span class="dot">
+          <div class="square"></div>
+          <div class="triangle-left"></div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row content row-center-section container">
+    <div class="col-sm-4 text-left">
+      <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                <h3>3 Personal Projects</h3>
+            </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p class="card-text">
+              <ul>
+                  <li style="color: black;">Smart IoT Doorbell</li>
+                  <li style="color: black;">Wo-Me IOS App</li>
+                  <li style="color: black;">My Website</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 text-left">
+      <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                <h3>3 Academic projects</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+              <p class="card-text">
+                <ul>
+                  <li style="color: black;">Banking Innovation - Regions Bank</li>
+                  <li style="color: black;">Space Trader Game</li>
+                  <li style="color: black;">3D Clock with Matlab</li>
+                </ul>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 text-left">
+      <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                <h3>3 Internships</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+              <p class="card-text" >
+                <ul>
+                  <li style="color: black;">Girls Who Code - Education Team Member</li>
+                  <li style="color: black;">Alternative Service Break - Active Volunteer</li>
+                  <li style="color: black;">Arab Student Organization - Ex VP</li>
+                </ul>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm text-left">
+      <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src="./imgs/buzz.img">
+                <h3>3 GT Organizations</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+              <p class="card-text" >
+                <ul>
+                  <li style="color: black;">My Influency Startup</li>
+                  <li style="color: black;">AT&T Externship</li>
+                  <li style="color: black;">Bipoint in Morocco</li>
+                </ul>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="container-fluid text-center">    
@@ -90,17 +231,71 @@
     </div>
   </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="container-fluid text-center contact-section">
+  <div class="row content container-fluid">
+    <div class="col-sm-1 sidenav">
+      <marquee direction="down" height="800" width="7" scrollamount="15" style="color: #a70303;">  E M <br> <br> W O L L O F</marquee>
+    </div>
+    <div class="col-sm-7 text-left"> 
+      <div class="w-container">
+        <div class="section__title--contact" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease" data-aos-anchor-placement="center-bottom">Interested to know more?</div>
+        <div data-w-id="" class="email-link-wrapper" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease">
+          <p>Email me 
+            <a href="#" id="email-link" class="email-link-2 text">yasminesoubai99@gmail.com</a>
+          </p>
+          <div style="transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); display: none; opacity: 0; transform-style: preserve-3d;" class="email-link__tooltip">
+            <a data-clipboard-text="yasminesoubai99@gmail.com" data-w-id="8c93aa77-a664-bf95-d2a9-54f270251a57" href="#" class="clipboard w-button">Copy email to clipboard</a>
+            <div class="email-link__divider"></div>
+            <div>
+              <a href="mailto:yasminesoubai99@gmail.com" class="email-link-2">Email me directly</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-wrapper">
+        <h1 class="social-wrapper-title" data-aos="zoom-in" data-aos-delay="300" data-aos-easing="ease">#FollowMe</h1>
+          <a href="https://www.instagram.com/sb.yasmine/?hl=en" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Instagram" data-aos="zoom-out" data-aos-delay="500" data-aos-easing="ease">
+            <i class="fab fa-instagram fa-2x" style="font-size: 50px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yasmine-soubai" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Linkedin" data-aos="zoom-out" data-aos-delay="700" data-aos-easing="ease">
+            <i class="fab fa-linkedin fa-2x" style="font-size: 50px;"></i>
+          </a>
+          <a href="https://github.com/yasminesoubai99" class="mr-1 social-style" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Follow me on Github" data-aos="zoom-out" data-aos-delay="900" data-aos-easing="ease">
+            <i class="fab fa-github fa-2x" style="font-size: 50px;"></i>
+          </a>
+      </div>
+    </div>
+    <div class="col-sm-4 sidenav">
+      <div class="footer-bg">
+        <img src="https://64.media.tumblr.com/fad05e3bd3a7661366c51c44a1fd1a9c/tumblr_nt9t4deU5a1tfsn81o1_500.gifv" alt="Brane XLVI, 2015" width="400" height="450" class="abstract-gif">
+      </div>
+      <div>
+        <h4>Made with 
+          <span><i class="fal fa-heart" style="color: #a70303; font-size: 30px;"></i></span>
+          by Yasmine Soubai
+        </h4>
+        <h4>Last Update 2020</h4>
+      </div>
+    </div>
+  </div>
 </footer>
 
-
-
-<!--Loader-->
+<!-- Tool Tip -->
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<!-- Loader -->
 <script>
     $(window).on("load",function(){
       $(".loader-wrapper").fadeOut("slow");
     });
+</script>
+<!-- Animate while scrolling -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </body>
