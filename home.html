@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- My CSS-->
   <link rel="stylesheet" href="home.css">
+
 </head>
 
 <body>
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 <header>
   <nav class="navbar navbar-header fixed-top">
     <a class="navbar-brand cursive" style="font-size: 30px" href="#">YS</a>
@@ -245,6 +249,47 @@
 <script>
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<!--Interactive scrolling-->
+<script>
+  (function($) {
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  }; 
+  })(jQuery);
+  var win = $(window);
+  var allMods = $(".card");
+  allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+  });
+  win.scroll(function(event) {
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  });
+</script>
+<!--Loader-->
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
   });
 </script>
 </body>

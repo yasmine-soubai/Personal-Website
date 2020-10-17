@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&amp;family=Varta:wght@300;400;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+@import url("https://fonts.googleapis.com/css?family=Rochester");
+
+html {
+    scroll-behavior: smooth;
+}  
+body {
+    background-color: rgba(0,0,0,1);
+    font-weight:600;
+    text-align:left !important;
+    color: white;
+    font-family: 'Anonymous Pro';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poiret One", cursive;
+    font-weight: bolder;
+}
+
+a{
+    font-family: 'Space Mono', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a70303;
+    text-decoration: none;
+    font-size: larger;
+}
+/*Loader*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #8d878728;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+  
+/* Navbar */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #111 !important;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+.abs-center-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hoverable{
+    background:none !important;
+    position:relative;
+    box-shadow: 0 0 1px rgba(19, 19, 19, 0);
+    transition-duration: .3s;
+    transition-property:transform;
+    margin-left: 30px;
+}
+.hoverable:before{
+    position: fixed !important;
+    pointer-events: none;
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:100%;
+    opacity:0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+}
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+    transform: translateY(-5px);
+    color: #a70303;
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+@keyframes bounce-animation {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+.bounce {
+    animation-name: bounce-animation;
+    animation-duration: 2s;
+}
+
+
+/*Main section*/
+@media screen and (max-width: 991px) {
+    .main-section {
+        min-height: auto;
+        padding-top: 40px;
+    }
+    .name {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: monospace;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+}
+.main-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    background-image: url("./imgs/me-removebg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 900px 900px;
+    position: left;
+    margin: 20px;
+}
+.my-img {
+    height: 400px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: monospace;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+.sub-heading-1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: monospace;
+}
+.sub-heading-2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: monospace;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+/*progress ring*/
+#container { margin: 0%; }
+
+#circle { 
+    position: relative; 
+    width: 100%; ; 
+    overflow: hidden; 
+    left: 10%; 
+    margin-top: 0% !important;
+    text-transform: uppercase;
+}
+
+#circle text { font-size: 16px; font-weight: bold; }
+
+#circle svg { position: relative; left: 0; top: 0; width: 500px; height: 500px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 100%}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    background-color: #727272;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+    height: auto;
+    padding: 15px;
+}
+.row.content {height:auto;} 
+}

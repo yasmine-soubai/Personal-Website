@@ -46,6 +46,61 @@ a:hover{
 .cursive:visited{
     color: #a70303;
 }
+
+/* Interactive scrolling -Cards */
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 2s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 2s; /* So they look staggered */
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
+
+/*Loader*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #8d878728;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
 /* Navbar */
 .navbar-header {
     position: fixed !important;
@@ -71,7 +126,6 @@ a:hover{
 .hoverable:before{
     position: fixed !important;
     pointer-events: none;
-    content: '';
     top: 100%;
     left: 5%;
     height:10px;
@@ -231,6 +285,7 @@ a:hover{
     color: white;
     text-align: center;
     padding: 0;
+    position: relative;
 }
 .dot {
     height: 200px;
