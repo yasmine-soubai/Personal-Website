@@ -95,7 +95,7 @@ a:hover{
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: rgb(92, 187, 28) !important;
+    background-color: #a63446ff !important;
     text-transform: uppercase;
     padding-left: 5%;
 }
@@ -109,8 +109,8 @@ a:hover{
     position:relative;
     box-shadow: 0 0 1px rgba(19, 19, 19, 0);
     transition-duration: .3s;
-    transition-property:transform;
     margin-left: 30px;
+    color: #fff;
 }
 .hoverable:before{
     position: fixed !important;
@@ -128,7 +128,7 @@ a:hover{
 }
 .hoverable:hover, .hoverable:active, .hoverable:focus{
     transform: translateY(-5px);
-    color: #7e1946ff;
+    color: #0c6291ff;
 }
 .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
     opacity: 1;
@@ -279,6 +279,12 @@ a:hover{
     to { transform: rotate(0); }
 }
 
+
+--big-dip-oruby: #a63446ff;
+--baby-powder: #fbfef9ff;
+--sapphire-blue: #0c6291ff;
+--black: #000004ff;
+--pansy-purple: #7e1946ff;
 /* Center Section */
 @media screen and (max-width: 991px) {
     .center-section {
@@ -290,10 +296,10 @@ a:hover{
     max-width: 100%;
     min-height: 100vh;
     padding: 20px 20px;
-    background-color: #7e1946ff;
-    color: #fff;
+    background-color: #fbfef9ff;
+    color: #000004ff;
 }
-.dot {
+/* .dot {
     height: 200px;
     width: 200px;
     background: linear-gradient(135deg, #000004ff 0%,#0c6291ff 100%);
@@ -304,12 +310,12 @@ a:hover{
     content: "";
     display: block;
     padding-bottom: 100%;
-}
-.square{
+} */
+/* .square{
     width: 100px;
     height: 100px;
     background-color: none;
-    border:solid #fbfef9ff;
+    border:solid #a63446ff;
     position: relative;
     animation-name: example;
     animation-duration: 3s;
@@ -321,7 +327,7 @@ a:hover{
 	width: 0;
 	height: 0;
 	border-top: 60px solid transparent;
-	border-right: 120px solid rgba(251, 254, 249, 0.452);
+	border-right: 120px solid rgba(194, 126, 158, 0.452);
     border-bottom: 60px solid transparent;
     margin-top: 0;
     margin-bottom: 100px;
@@ -334,15 +340,76 @@ a:hover{
 50%  {border-color:#0c6291ff; left:100px; top:100px;}
 75%  {border-color:#fbfef9ff; left:0px; top:100px;}
 100% {border-color:#a63446ff; left:0px; top:0px;}
-}
+} */
 .card-title {
     color: #0c6291ff;
+    top: 25%;
+    font-size: 50px;
 }
 .cart-text {
     text-align: justify;
 }
-.row-center-section {
-    margin: 5%;
+.card-row {
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.card-col {
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.center-col {
+    padding: 1%
+}
+
+.blue-btn {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff!important;
+    padding: 15px 55px;
+    border-radius: 25px;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 10%;
+    box-shadow: 0 20px 80px rgba(59,67,242,.3);
+    background: #0c6291ff;
+    transition: all .6s ease;
+}
+.pink-btn {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff!important;
+    padding: 15px 55px;
+    border-radius: 25px;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 10%;
+    box-shadow: 0 20px 80px rgba(59,67,242,.3);
+    background: #a63446ff;
+    transition: all .6s ease;
+}
+.violet-btn {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff!important;
+    padding: 15px 55px;
+    border-radius: 25px;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 10%;
+    box-shadow: 0 20px 80px rgba(59,67,242,.3);
+    background: #7e1946ff;
+    transition: all .6s ease;
 }
 
 /*Animated card */
@@ -357,7 +424,7 @@ a:hover{
     transition: .5s;
     margin: 20px;
     border-radius: 18px;
-    box-shadow: 0 10px 10px rgba(166, 52, 69, 0.596);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 .card-stats:hover .card-front {
     transform: rotateX(-180deg);
@@ -439,11 +506,11 @@ footer {
     min-height: 100vh;
     padding: 20px 20px;
     background-color: #fff;
-    color: #7e1946ff;
+    color: #000004ff;
 }
 
 .contact-section a {
-    color: black;
+    color: #7e1946ff;
 }
 
 .contact-section a:hover {
