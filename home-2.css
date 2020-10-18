@@ -23,8 +23,13 @@ body {
     background-color: #fbfef9ff;
     font-weight:600;
     text-align:left !important;
-    color: #000004ff;
     font-family: 'Anonymous Pro';
+}
+
+/* Stop horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1,
@@ -35,7 +40,6 @@ h5,
 h6 {
     font-family: "Poiret One", cursive;
     font-weight: bolder;
-    color: #0c6291ff;
 }
 
 a{
@@ -95,9 +99,16 @@ a:hover{
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: #a63446ff !important;
     text-transform: uppercase;
     padding-left: 5%;
+}
+.navbar-line {
+    height: 8px;
+    background-image: linear-gradient(90deg, transparent, #0c6291ff, #7e1946ff, #a63446ff, transparent);    
+    border: 0;
+    height: 1px;
+    margin: 0;
+    padding: 0;
 }
 .abs-center-x {
     position: relative;
@@ -110,7 +121,7 @@ a:hover{
     box-shadow: 0 0 1px rgba(19, 19, 19, 0);
     transition-duration: .3s;
     margin-left: 30px;
-    color: #fff;
+    color: #7e1946ff;
 }
 .hoverable:before{
     position: fixed !important;
@@ -128,7 +139,7 @@ a:hover{
 }
 .hoverable:hover, .hoverable:active, .hoverable:focus{
     transform: translateY(-5px);
-    color: #0c6291ff;
+    color:a63446ff;
 }
 .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
     opacity: 1;
@@ -178,8 +189,6 @@ a:hover{
 .main-section {
     display: flex;
     min-height: 100vh;
-    background-color: #fbfef9ff;
-    color: #000004ff;
     /* background-image: url("./imgs/me-removebg.png"); */
     background-position: top;
     background-repeat: no-repeat;
@@ -195,7 +204,7 @@ a:hover{
     text-transform: uppercase;
     font-size: 150px;
     font-family: monospace;
-    -webkit-text-fill-color: #fbfef9ff;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #7e1946ff;
 }
@@ -214,7 +223,7 @@ a:hover{
     text-transform: uppercase;
     font-size: 50px;
     font-family: monospace;
-    -webkit-text-fill-color: #fbfef9ff;
+    -webkit-text-fill-color:transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0c6291ff;
 }
@@ -296,7 +305,6 @@ a:hover{
     max-width: 100%;
     min-height: 100vh;
     padding: 20px 20px;
-    background-color: #fbfef9ff;
     color: #000004ff;
 }
 @media screen and (max-width: 991px) {
@@ -309,7 +317,6 @@ a:hover{
     max-width: 100%;
     min-height: 100vh;
     padding: 20px 20px;
-    background-color: #fbfef9ff;
     color: #000004ff;
 }
 @media screen and (max-width: 991px) {
@@ -322,17 +329,42 @@ a:hover{
     max-width: 100%;
     min-height: 100vh;
     padding: 20px 20px;
-    background-color: #fbfef9ff;
     color: #000004ff;
 }
 
-.card-title {
-    color: #0c6291ff;
+.card-title-violet {
     top: 25%;
     font-size: 50px;
+    text-transform: uppercase;
+    font-family: monospace;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #7e1946ff;
+    text-align: center;
 }
-.cart-text {
-    text-align: justify;
+.card-title-pink {
+    top: 25%;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: monospace;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #a63446ff;
+    text-align: center;
+}
+.card-title-blue {
+    top: 25%;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: monospace;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0c6291ff;
+    text-align: center;
+}
+.card-text {
+    text-align: left;
+    padding-bottom: 10%;
 }
 .card-row {
     vertical-align: center;
@@ -340,14 +372,47 @@ a:hover{
     align-content: center;
     text-align: center;
 }
-.card-col {
+.card-col-1 {
     vertical-align: center;
     justify-content: center;
     align-content: center;
     text-align: center;
 }
+.card-col-2 {
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 90px;
+}
 .card-body {
     width: 90%;
+}
+
+.pink-line {
+    height: 8px;
+    background-image: linear-gradient(90deg, #a63446ff, transparent);    
+    border: 0;
+    height: 1px;
+}
+.blue-line {
+    height: 8px;
+    background-image: linear-gradient(90deg, #0c6291ff, transparent);    
+    border: 0;
+    height: 1px;
+}
+.violet-line {
+    height: 8px;
+    background-image: linear-gradient(90deg, #7e1946ff, transparent);    
+    border: 0;
+    height: 1px;
+}
+
+@media (min-width: 992px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 .center-col {
@@ -362,9 +427,9 @@ a:hover{
     padding: 15px 55px;
     border-radius: 25px;
     text-align: center;
-    width: 300px;
+    width: 50%;
     display: block;
-    margin: 10%;
+    margin: 0 auto;
     box-shadow: 0 20px 80px rgba(59,67,242,.3);
     background: #0c6291ff;
     transition: all .6s ease;
@@ -377,9 +442,9 @@ a:hover{
     padding: 15px 55px;
     border-radius: 25px;
     text-align: center;
-    width: 300px;
+    width: 50%;
     display: block;
-    margin: 10%;
+    margin: 0 auto;
     box-shadow: 0 20px 80px rgba(242, 59, 196, 0.3);
     background: #a63446ff;
     transition: all .6s ease;
@@ -392,9 +457,9 @@ a:hover{
     padding: 15px 55px;
     border-radius: 25px;
     text-align: center;
-    width: 300px;
+    width: 50%;
     display: block;
-    margin: 10%;
+    margin: 0 auto;
     box-shadow: 0 20px 80px rgba(154, 59, 242, 0.3);
     background: #7e1946ff;
     transition: all .6s ease;
@@ -441,8 +506,6 @@ a:hover{
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 10%;
-    left: 5%;
     background-color:#0c6291ff;
     backface-visibility: hidden;
     transform: rotateX(180deg);
@@ -467,11 +530,21 @@ a:hover{
         line-height: 20px;
 }
 
+@media only screen and (max-width: 1199px) {
+    .card-row {
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .card-row {
+        padding-right: 30px;
+    }
+}
+
+
 /* Footer */
 footer {
-    color: #7e1946ff;
     padding: 15px;
-    background-color: white;
 }
 .sidenav {
     height: 100%;
@@ -485,16 +558,14 @@ footer {
 }
 @media screen and (max-width: 991px) {
     .contact-section {
-        min-height: auto;
+        max-height: auto;
         padding-top: 30px;
     }
 }
 .contact-section {
     max-width: 100%;
-    min-height: 100vh;
+    max-height: 100%;
     padding: 20px 20px;
-    background-color: #fff;
-    color: #000004ff;
 }
 
 .contact-section a {
@@ -587,4 +658,42 @@ footer {
         font-size: 20px;
         font-weight: 100;
     }
+}
+.sitemap-link {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.sitemap-link:hover {
+    font-size: smaller;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #000004ff;
+    color: #fbfef9ff;
+}
+.black-btn {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff!important;
+    padding: 15px 55px;
+    border-radius: 25px;
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 20px 80px rgba(242, 59, 196, 0.3);
+    background: #000004ff;
+    transition: all .6s ease;
+}
+
+.dark-mode p {
+    color: #fbfef9ff;
+}
+.dark-mode .navbar-header a {
+    color: #fbfef9ff;
+}
+.dark-mode span {
+    color: #fbfef9ff;
 }
