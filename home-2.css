@@ -287,60 +287,45 @@ a:hover{
 --pansy-purple: #7e1946ff;
 /* Center Section */
 @media screen and (max-width: 991px) {
-    .center-section {
+    .center-section-1 {
         min-height: auto;
-        padding-top: 30px;
+        padding-top: 10px;
     }
 }
-.center-section {
+.center-section-1 {
     max-width: 100%;
     min-height: 100vh;
     padding: 20px 20px;
     background-color: #fbfef9ff;
     color: #000004ff;
 }
-/* .dot {
-    height: 200px;
-    width: 200px;
-    background: linear-gradient(135deg, #000004ff 0%,#0c6291ff 100%);
-    border-radius: 50%;
-    display: inline-block;
-  }
-.dot:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-} */
-/* .square{
-    width: 100px;
-    height: 100px;
-    background-color: none;
-    border:solid #a63446ff;
-    position: relative;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    display: inline-block;
+@media screen and (max-width: 991px) {
+    .center-section-2 {
+        min-height: auto;
+        padding-top: 10px;
+    }
 }
-.triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 60px solid transparent;
-	border-right: 120px solid rgba(194, 126, 158, 0.452);
-    border-bottom: 60px solid transparent;
-    margin-top: 0;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    opacity: 0.5;
+.center-section-2 {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+    background-color: #fbfef9ff;
+    color: #000004ff;
 }
-@keyframes example {
-0%   {border-color:#fbfef9ff; left:0px; top:0px;}
-25%  {border-color:#a63446ff; left:100px; top:0px;}
-50%  {border-color:#0c6291ff; left:100px; top:100px;}
-75%  {border-color:#fbfef9ff; left:0px; top:100px;}
-100% {border-color:#a63446ff; left:0px; top:0px;}
-} */
+@media screen and (max-width: 991px) {
+    .center-section-3 {
+        min-height: auto;
+        padding-top: 10px;
+    }
+}
+.center-section-3 {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+    background-color: #fbfef9ff;
+    color: #000004ff;
+}
+
 .card-title {
     color: #0c6291ff;
     top: 25%;
@@ -360,6 +345,9 @@ a:hover{
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+.card-body {
+    width: 90%;
 }
 
 .center-col {
@@ -392,7 +380,7 @@ a:hover{
     width: 300px;
     display: block;
     margin: 10%;
-    box-shadow: 0 20px 80px rgba(59,67,242,.3);
+    box-shadow: 0 20px 80px rgba(242, 59, 196, 0.3);
     background: #a63446ff;
     transition: all .6s ease;
 }
@@ -407,7 +395,7 @@ a:hover{
     width: 300px;
     display: block;
     margin: 10%;
-    box-shadow: 0 20px 80px rgba(59,67,242,.3);
+    box-shadow: 0 20px 80px rgba(154, 59, 242, 0.3);
     background: #7e1946ff;
     transition: all .6s ease;
 }
