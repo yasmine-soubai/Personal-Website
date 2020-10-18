@@ -477,7 +477,7 @@ a:hover{
     transition: .5s;
     margin: 20px;
     border-radius: 18px;
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    background-color: transparent;
 }
 .card-stats:hover .card-front {
     transform: rotateX(-180deg);
@@ -501,6 +501,7 @@ a:hover{
     color: #a63446ff;
     padding: 10%;
     border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 .card-back {
     height: 100%;
@@ -517,6 +518,7 @@ a:hover{
     padding-left: 0;
     margin-left: 20;
     text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
  .card-back   h2 {
         margin: 60% auto 35% auto;
@@ -696,4 +698,15 @@ footer {
 }
 .dark-mode span {
     color: #fbfef9ff;
+}
+.dark-mode .black-btn {
+    background-color: #fbfef9ff;
+    color: #000004ff !important;
+}
+.dark-mode .card-front {
+    background-color: #000004ff;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+.dark-mode .card-back{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
