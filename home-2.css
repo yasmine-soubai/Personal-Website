@@ -55,6 +55,11 @@ a:hover{
     text-decoration: none;
     font-size: larger;
 }
+
+.row {
+    margin:0;
+    width: 100%;
+}
 /*Loader*/
 .loader-wrapper {
     width: 100%;
@@ -67,35 +72,30 @@ a:hover{
     justify-content: center;
     align-items: center;
   }
-  .loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid #a63446ff;
-    animation: loader 2s infinite ease;
-  }
-  .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #a63446ff;
-    animation: loader-inner 2s infinite ease-in;
-  }
-  @keyframes loader {
-    0% { transform: rotate(0deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(180deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(360deg);}
-  }
-  @keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
-  }
+  .loader:before {
+	position: absolute;
+	content: '';
+	width: 10%;
+	height: 15%;
+	border-radius: 50%;
+    border-bottom: 0 solid #ffffff05;
+    top:45%;
+    left: 45%;
+
+	
+	box-shadow: 
+		0 -10px 20px 20px #ffffff40 inset,
+		0 -5px 15px 10px #ffffff50 inset,
+		0 -2px 5px #ffffff80 inset,
+		0 -3px 2px #ffffffBB inset,
+		0 2px 0px #a63446ff,
+		0 2px 3px #a63446ff,
+		0 5px 5px #ffffff90,
+		0 10px 15px #ffffff60,
+		0 10px 20px 20px #ffffff40;
+	filter: blur(3px);
+	animation: 3s rotate linear infinite;
+}  
 
 /* Navbar */ 
 .navbar {
@@ -681,12 +681,11 @@ footer {
     line-height: 1.3;
     font-weight: 700;
     color: #fff!important;
-    padding: 15px 55px;
+    padding: 10px 10px;
     border-radius: 25px;
     text-align: center;
     width: 60%;
     display: block;
-    margin: 0 auto;
     box-shadow: 0 20px 80px rgba(242, 59, 196, 0.3);
     background: #000004ff;
     transition: all .6s ease;
