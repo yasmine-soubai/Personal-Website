@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 @import url("https://fonts.googleapis.com/css?family=Rochester");
 
-/* Plette CSS HEX */
+/* Palette CSS HEX */
 /* --big-dip-oruby: #a63446ff;
 --baby-powder: #fbfef9ff;
 --sapphire-blue: #0c6291ff;
@@ -297,7 +297,7 @@ a:hover{
     padding: 10px 10px;
     border-radius: 25px;
     text-align: center;
-    width: 60%;
+    width: 300px;;
     display: block;
     box-shadow: 0 20px 80px rgba(242, 59, 196, 0.3);
     background: #000004ff;
