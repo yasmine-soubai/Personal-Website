@@ -46,12 +46,11 @@ div#timeline_container header h1 {
 	top:20px;
 	right:80px;
 	font-size:2.8em;
-	text-shadow:2px 2px 1px #fff;
 }
 div#timeline_container > ul {
 	position:relative;
 	width:4px;
-	background:#a63446ff;
+    background: linear-gradient(0deg, #0c6291ff, #7e1946ff, #a63446ff);
 	margin:0 auto;
 	padding:6em 0 0;
 	list-style:none;      		
@@ -61,7 +60,7 @@ div#timeline_container > ul:after {
 	width:15px;
 	height:15px;
 	border-radius:50%;
-	background:#a63446ff;
+	background:#0c6291ff;
 	position:absolute;
 	bottom:0;
 	left:-6px;
@@ -80,11 +79,14 @@ div#timeline_container > ul li > div.event_icn {
 	padding:0.3em;
 	font-size:1.7em;
 	border-radius:50%;
-	background:#ebe7e4;
+	background:#DDDBDA;
     margin-left:-5px;
     margin-top: 20px;
-    color: #ebe7e4;
-    background:#0c6291ff;
+}
+
+.dark-mode div#timeline_container > ul li > div.event_icn {
+	background:#ebe7e4;
+
 }
 
 div#timeline_container > ul > li div.event_content {
