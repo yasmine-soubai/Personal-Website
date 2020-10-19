@@ -140,6 +140,10 @@ a:hover{
     transform: translateY(-5px);
 }
 
+.icon-bar {
+    color: #000004ff;
+}
+
 @keyframes bounce-animation {
     16.65% {
       -webkit-transform: translateY(8px);
@@ -323,6 +327,9 @@ a:hover{
 }
 .dark-mode .card-back{
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+.dark-mode .icon-bar {
+    color: #fbfef9ff;
 }
 
 /* Scroll Bar update */
