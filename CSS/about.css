@@ -1,3 +1,9 @@
+/* Palette CSS HEX */
+/* --big-dip-oruby: #a63446ff;
+--baby-powder: #fbfef9ff;
+--sapphire-blue: #0c6291ff;
+--black: #000004ff;
+--pansy-purple: #7e1946ff; */
 
 /* Navbar Edits */
 .black-btn {
@@ -10,12 +16,6 @@
 }
 
 /* timeline */
-/* Palette CSS HEX */
-/* --big-dip-oruby: #a63446ff;
---baby-powder: #fbfef9ff;
---sapphire-blue: #0c6291ff;
---black: #000004ff;
---pansy-purple: #7e1946ff; */
 
 .icon-address:before { content: ''; }
 	

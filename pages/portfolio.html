@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- My CSS-->
-  <link rel="stylesheet" href="../CSS/about.css">
+  <link rel="stylesheet" href="../CSS/portfolio.css">
   <link rel="stylesheet" href="../CSS/default.css">
   <!--Animate website while scrolling-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -36,8 +37,8 @@
     <div class="collapse navbar-collapse abs-center-x" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a class="hoverable nav-link" href="../home.html">Home</a></li>
-        <li class="active"><a class="hoverable nav-link" href="#">About</a></li>
-        <li><a class="hoverable nav-link" href="../pages/portfolio.html">Portfolio</a></li>
+        <li><a class="hoverable nav-link" href="../pages/about.html">About</a></li>
+        <li class="active"><a class="hoverable nav-link" href="#">Portfolio</a></li>
         <li><a class="hoverable nav-link" href="../pages/contact.html">Contact</a></li>
       </ul>
       <button onclick="myFunction()" class="black-btn">Switch to Dark/Light Mode</button>
@@ -47,19 +48,101 @@
 <hr class="navbar-line">
 </header>
 
-<div class="container-fluid main-section text-center">    
-  <div class="row content container-fluid">
-    <div class="col-sm">
-
+<!-- Modal -->
+<!-- <div id="modal-01" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" style="color: #7D9FAE;">Influencer added to cart</h6>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h5>Your selected influencer was successfully added to the cart. Please check your cart to send an offer</h5>
+        <button type="button" class="cd-add-to-cart js-cd-add-to-cart btn essence-btn m-2 mt-5" style="width: 200px;" data-dismiss="modal" data-toggle="modal" data-target="#cart-modal">Check my Cart</button>
+      </div>
     </div>
   </div>
-</div>
-<div class="container-fluid center-section-1">    
-  <div class="row content row-center-section">
+</div> -->
 
-  </div>
-</div>
+<section id="portfolio">
+    <div class="row section-intro">
+       <div class="col-sm">
+           <h5>Portfolio</h5>
+           <h1>Check Out Some of My Works.</h1>
+       </div>   		
+   </div>
+   <div class="row portfolio-content">
+       <div class="col-sm-6">
+            <div class="item-wrap">
+                <img src="../imgs/myImg.jpg" alt="Liberty">
+                <a href="#modal-01" class="overlay">	                  	           
+                    <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                            <h3 class="folio-title">Liberty</h3>
+                            <hr class="blue-line">	     					    
+                            <span class="folio-types">
+                                Graphic Design
+                            </span>
+                        </div>	                      	
+                    </div>                    
+                </a>
+            </div>	
+       </div>
+        <div class="col-sm-6">
+            <div class="item-wrap">
+                <img src="../imgs/myImg.jpg" alt="Liberty">
+                <a href="#modal-02" class="overlay">	                  	           
+                    <div class="folio-item-table">
+                        <div class="folio-item-cell">
+                            <h3 class="folio-title">Liberty</h3>
+                            <hr class="pink-line">	     					    	     					    
+                            <span class="folio-types">
+                                Graphic Design
+                            </span>
+                        </div>	                      	
+                    </div>                    
+                </a>
+            </div>	
+       </div>
 
+
+            <!-- modal popups - begin
+            ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">	
+                <div class="media">
+                    <img src="../imgs/myImg.jpg" alt="">
+                </div>      	
+                <div class="description-box">
+                    <h4>Liberty</h4>		      
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                    <div class="categories">Web Development</div>			               
+                </div>
+                <div class="link-box">
+                    <a href="http://www.behance.net">Details</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>		      
+            </div> <!-- /modal-01 -->
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">	
+                <div class="media">
+                    <img src="../imgs/myImg.jpg" alt="">
+                </div>      	
+                <div class="description-box">
+                    <h4>Shutterbug</h4>		      
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <div class="categories">Web Design</div>			               
+                </div>
+                <div class="link-box">
+                    <a href="http://www.behance.net">Details</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>		      
+            </div> <!-- /modal-02 -->
+
+
+            <!-- modal popups - end
+            ============================================================= -->
+</section>
 
 <!-- <div class="container-fluid text-center">    
   <div class="row content">

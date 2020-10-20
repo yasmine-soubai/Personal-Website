@@ -206,7 +206,7 @@ a:hover{
     min-height: 100vh;
     padding: 20px 20px;
     color: #000004ff;
-}
+} */
 
 .pink-line {
     height: 8px;
@@ -225,7 +225,7 @@ a:hover{
     background-image: linear-gradient(90deg, #7e1946ff, transparent);    
     border: 0;
     height: 1px;
-} */
+}
 
 @media (min-width: 992px) {
     .col-sm-6 {
