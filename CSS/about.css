@@ -1,13 +1,4 @@
 
-/* Navbar Edits */
-.black-btn {
-    margin-left: 70%;
-}
-@media screen and (max-width: 991px) {
-    .black-btn {
-        margin-left: 0;
-    }
-}
 
 /* timeline */
 /* Palette CSS HEX */

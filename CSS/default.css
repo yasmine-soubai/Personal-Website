@@ -176,6 +176,16 @@ a:hover{
 }
 
 
+/* Navbar Edits */
+.black-btn-nav{
+    margin-left: 70%;
+}
+@media screen and (max-width: 991px) {
+    .black-btn-nav {
+        margin-left: 0;
+    }
+}
+
 /*Main section*/
 @media screen and (max-width: 991px) {
     .main-section {
