@@ -227,7 +227,7 @@ header .logo a {
 
 /* Intro section */
 #intro {
-    background: #151515 url(../imgs/tech-bg.jpg) no-repeat center bottom;
+    background: #151515 url(../imgs/tech-bg.jpeg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -771,24 +771,16 @@ a, a:visited {
 
 /* Services section */
 #services {
-    background: #313131 url(../images/bg.jpg) no-repeat center;
+    background: #151515 url(../images/bg.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-bottom: 5rem;
     color: white;
     position: relative;
 }
-#services .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #151515;
-    opacity: .9;
-}
+
 #services .section-intro {
     margin-bottom: 1.8rem;
 }
@@ -800,8 +792,54 @@ a, a:visited {
 }
 .services-content {
     max-width: 1200px;
+    max-height: 50%;
 }
-.owl-carousel {
+
+#myCarousel {
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+    overflow: hidden;
+    text-align: center;
+    height: 450px;
+}
+#myCarousel .service {
+    margin-bottom: 1.2rem;
+    padding: 0 30px;
+}
+.service .icon {
+    text-align: center !important;
+    font-size: 4.8rem;
+    color: #FF0077;
+}
+.service-content h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 30px;
+}
+
+.carousel-indicators {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.carousel-indicators li {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin: 2rem;
+    border: none;
+}
+
+.carousel-indicators .active {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #cc005f;
+    margin: 2rem;
+}
+
+/* .owl-carousel {
     display: none;
     position: relative;
     width: 100%;
@@ -828,14 +866,6 @@ a, a:visited {
     display: none;
     position: relative;
     -webkit-transform: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
 }
 .owl-carousel .owl-item {
     float: left;
@@ -870,25 +900,7 @@ a, a:visited {
     text-align: center;
     width: 100%;
     margin: .6rem 0 0;
-}
-.owl-theme .owl-controls .owl-page {
-    display: inline-block;
-}
-.owl-controls .owl-page, .owl-controls .owl-buttons div {
-    cursor: pointer;
-}
-.owl-theme .owl-controls .owl-page.active span {
-    background: #FF0077;
-}
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 1.2rem .8rem 0 .8rem;
-    border-radius: 50%;
-    display: inline-block;
-    background: #FFFFFF;
-}
+} */
 
 /* stats section */
 #stats {
@@ -1211,10 +1223,10 @@ footer .copyright span {
     border-radius: 10px;
   }
      ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(0deg, #ffffff, #000000, #cc005f);
+    background-image: linear-gradient(0deg, #cc005f, #000000, #cc005f);
     border-radius: 10px;
   }
     ::-webkit-scrollbar-thumb:hover {
-        background-image: linear-gradient(0deg, #afafaf, #000000, #e2659f);
+        background-image: linear-gradient(0deg, #cc005f, #ffffff, #cc005f);
         opacity: 0.5; 
   }
