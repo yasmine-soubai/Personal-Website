@@ -55,9 +55,9 @@ header .row {
     margin: 0 auto;
 }
 @media only screen and (max-width: 1024px) {
-header .top-bar {
-    left: 60px;
-}
+    header .top-bar {
+        left: 60px;
+    }
 }
 header .top-bar {
     display: block;
@@ -278,7 +278,6 @@ header .logo a {
     border-color: rgba(255, 255, 255, 0.432);
     height: 6rem !important;
     line-height: 5.4rem !important;
-    padding: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
     font-size: 1.3rem;
@@ -383,6 +382,15 @@ p.lead {
     line-height: 1.8;
     color: #888888;
 }
+@media only screen and (max-width: 1024px) {
+    .intro-info img {
+        margin: 3rem 0 0 2rem ;
+    }
+    .intro-info .lead {
+        padding-left: 10rem;
+        padding-right: 3rem;
+    }
+}
 .about-content {
     position: relative;
     text-align: left;
@@ -477,6 +485,17 @@ p.lead {
 }
 .button-section {
     text-align: center;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+@media only screen and (max-width: 1024px) {
+    .button-section {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .button-section .button {
+        margin-bottom: 5rem;
+    }
 }
 .button-section [class*="col-"] .button:first-child {
     margin-right: 4rem;
@@ -493,7 +512,6 @@ p.lead {
     height: 5.4rem;
     line-height: 5.4rem;
     padding: 0 3rem;
-    margin: 0 .3rem 1.2rem 0;
     background: #d8d8d8;
     color: #313131;
     text-decoration: none;
@@ -511,6 +529,14 @@ p.lead {
     background: #313131;
     color: #FFFFFF;
 }
+.button-section .button:hover {
+    border-color: #cc005f;
+}
+.button-section .button.button-primary:hover {
+    background: #cc005f;
+
+}
+
 /* Resume Section*/
 #resume {
     padding-top: 12rem;
@@ -567,7 +593,7 @@ p.lead {
 }
 @media only screen and (max-width: 1024px) {
 #resume .timeline-header {
-    padding-right: 50px;
+    padding-right: 20px;
 }
 }
 #resume .timeline-header {
@@ -577,9 +603,9 @@ p.lead {
     text-align: right;
 }
 @media only screen and (max-width: 1024px){
-#resume .timeline-header h3 {
-    font-size: 1.8rem;
-}
+    #resume .timeline-header h3 {
+        font-size: 1.8rem;
+    }
 }
 @media only screen and (max-width: 1024px){
 #resume .timeline-header p {
@@ -593,7 +619,7 @@ p.lead {
 }
 @media only screen and (max-width: 1024px) {
 #resume .timeline-content {
-    padding-left: 50px;
+    padding-left: 20px;
 }
 }
 #resume .timeline-content {
@@ -808,13 +834,12 @@ a, a:visited {
     padding: 0 30px;
 }
 .service .icon {
-    text-align: center !important;
     font-size: 4.8rem;
     color: #FF0077;
 }
 .service-content h3 {
     text-align: center;
-    padding: 2rem;
+    padding-bottom: 2rem;
     font-size: 30px;
 }
 
@@ -838,69 +863,17 @@ a, a:visited {
     background: #cc005f;
     margin: 2rem;
 }
-
-/* .owl-carousel {
-    display: none;
-    position: relative;
-    width: 100%;
-    -ms-touch-action: pan-y;
+@media only screen and (max-width: 1024px) {
+    .service-content h3 {
+        font-size: 20px;
+    }
+    .service-content p {
+        font-size: 10px;
+    }
+    #myCarousel .service {
+        padding: 0 5px;
+    }
 }
-.services-list {
-    margin-top: 1.2rem;
-    text-align: center;
-}
-.owl-carousel .owl-wrapper-outer {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-}
-.owl-carousel .owl-wrapper {
-    display: none;
-    position: relative;
-    -webkit-transform: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-item {
-    float: left;
-}
-.services-list .service {
-    margin-bottom: 1.2rem;
-    padding: 0 30px;
-}
-.services-list .icon {
-    display: inline-block;
-    margin-bottom: 2.1rem;
-}
-.services-list .icon i {
-    font-size: 5.4rem;
-    color: #FF0077;
-}
-.services-list h3 {
-    color: #FFFFFF;
-}
-.services-list .desc {
-    color: rgba(255, 255, 255, 0.6);
-}
-.owl-controls {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-}
-.owl-pagination {
-    text-align: center;
-    width: 100%;
-    margin: .6rem 0 0;
-} */
 
 /* stats section */
 #stats {
@@ -915,19 +888,9 @@ a, a:visited {
 #stats .stat {
     border-left: 1px solid rgba(255, 255, 255, 0.12);
     min-height: 17.4rem;
-}
-.block-1-6 .bgrid:nth-child(6n+1), .block-1-4 .bgrid:nth-child(4n+1), .block-1-3 .bgrid:nth-child(3n+1), .block-1-2 .bgrid:nth-child(2n+1) {
-    clear: both;
-}
-.block-1-6 .bgrid {
     width: 16.66667%;
 }
-.bgrid {
-    padding: 0 20px;
-}
-[class*="col-"], .bgrid {
-    float: left;
-}
+
 #stats .icon-part i {
     font-size: 4.8rem;
     color: #000000;
@@ -942,6 +905,15 @@ a, a:visited {
 }
 #stats .stat-title {
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+    #stats .stat-title {
+        font-size: 15px;
+    }
+    #stats .stat-count {
+        font-size: 15px;
+    }
 }
 
 /* contact section */
@@ -1092,8 +1064,11 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     font-size: 4.2rem;
     color: #FFFFFF;
 }
-.contact-info h5 {
+.contact-info h2 {
     color: #FF0077;
+}
+.contact-info a {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* footer */
