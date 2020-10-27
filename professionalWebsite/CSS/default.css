@@ -827,11 +827,13 @@ a, a:visited {
     -ms-touch-action: pan-y;
     overflow: hidden;
     text-align: center;
-    height: 450px;
+    height: 200px;
 }
 #myCarousel .service {
     margin-bottom: 1.2rem;
-    padding: 0 30px;
+    padding: 10px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
 }
 .service .icon {
     font-size: 4.8rem;
@@ -1069,6 +1071,11 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 }
 .contact-info a {
     color: rgba(255, 255, 255, 0.7);
+}
+@media only screen and (max-width: 1024px) {
+    .contact-info .tab-full{
+        margin-bottom: 2.1rem;
+    }
 }
 
 /* footer */
