@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&amp;family=Varta:wght@300;400;600;700&amp;display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 html {
     scroll-behavior: smooth;
 }  
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poiret One", cursive;
+    font-family: "Rajdhani";
     font-weight: bolder;
 }
 
