@@ -69,6 +69,17 @@ a, a:visited {
 .fa-bars{
     color: #FBFEF9;
 }
+/* #sidebar {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #151515;
+    color: #fff;
+    transition: all 0.3s;
+} */
 
 
 /* Intro section */
